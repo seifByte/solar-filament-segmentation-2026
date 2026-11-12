@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+rfdetr_instances/
+test_maps/
+test_maps_ens/
+maps/
+maps_ens/
+submission.csv
+cache/
+weights/
+models/
+data/
