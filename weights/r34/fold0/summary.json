@@ -1,0 +1,13 @@
+{
+  "fold": 0,
+  "best_val_pq": 0.40935783476331955,
+  "selection": "max PQ over thresholds [0.3, 0.4, 0.5, 0.6, 0.7]",
+  "target_mode": "mean",
+  "n_train_files": 565,
+  "n_val_files": 142,
+  "n_tiles": 12000,
+  "n_pos_tiles": 4351,
+  "tile_list_sha256": "ce4f5d7a3e7b871c",
+  "steps_per_epoch": 750,
+  "best_epoch": 20
+}

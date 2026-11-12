@@ -225,6 +225,4 @@ maps/
 maps_ens/
 submission.csv
 cache/
-weights/
-models/
 data/
