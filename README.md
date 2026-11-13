@@ -51,20 +51,18 @@ data/MAGFiLO_1.0_Kaggle_2026/
 
 Open `notebooks/pipeline.ipynb` and run all cells.
 Sections 5, 6, 8, 10 and 12.3 are skippable using the provided pretrained weights and cache files.
+All required files (`weights/`, `models/selector/`, `cache/tree_ens_r34_b4.pkl`) are included in the repository.
 
 Output: `submission.csv`
-
 ## Full Reproducibility (optional)
 
-The following files are needed to rebuild the OOF cache and retrain the selector from scratch.
-They are not required to reproduce the submission CSV.
+The following prebuilt files are included in the repository to skip the most time-consuming steps.
+Sections 8 and 10 can regenerate them from scratch if needed.
 
 ```
-cache/rfdetr_feats_fold{0-4}.pkl  ← RF-DETR OOF features (needed for Section 12.3)
-maps_ens/*.npz                     ← OOF ensemble prob maps (needed for Section 10)
+maps_ens/*.npz                     ← OOF ensemble prob maps (output of Section 8)
+cache/rfdetr_feats_fold{0-4}.pkl  ← RF-DETR OOF features (output of Section 10.2)
 ```
-
-Both files are provided in the repository.
 
 ## Requirements
 
