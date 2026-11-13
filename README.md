@@ -39,20 +39,8 @@ cd solar-filament-segmentation-2026
 pip install -r requirements.txt
 ```
 
-Download weights and cache from HuggingFace:
-https://huggingface.co/datasets/Saifds10/solar-filament-segmentation-2026
-
 Download the competition data from Kaggle:
 https://www.kaggle.com/competitions/filament-segmentation-2026/data
-
-Place them as:
-```
-weights/r34/fold{0-4}/last.pth
-weights/b4/fold{0-4}/last.pth
-weights/rfdetr/fold{0-4}/checkpoint_best_ema.pth.part{0,1}
-models/selector/
-cache/tree_ens_r34_b4.pkl
-```
 
 Place competition data at:
 ```
@@ -62,7 +50,7 @@ data/MAGFiLO_1.0_Kaggle_2026/
 ## Run
 
 Open `notebooks/pipeline.ipynb` and run all cells.
-Sections 5, 6, 8, 10 and 12.3 are skippable using the provided pretrained weights and cache.
+Sections 5, 6, 8, 10 and 12.3 are skippable using the provided pretrained weights and cache files.
 
 Output: `submission.csv`
 
@@ -76,7 +64,7 @@ cache/rfdetr_feats_fold{0-4}.pkl  ← RF-DETR OOF features (needed for Section 1
 maps_ens/*.npz                     ← OOF ensemble prob maps (needed for Section 10)
 ```
 
-These will be added to HuggingFace when available.
+Both files are provided in the repository.
 
 ## Requirements
 
